@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hype.enotes.NewNote">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/new_note">
+
+        <EditText
+            android:id="@+id/etTheme"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/rounded_cornwe"
+            android:backgroundTint="#effffb00"
+            android:ems="10"
+            android:hint="Тема"
+            android:inputType="text|textPersonName"
+            android:selectAllOnFocus="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etText"
+            android:layout_width="250dp"
+            android:layout_height="213dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_cornwe"
+            android:ems="10"
+            android:hint="Содержание"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="@+id/etTheme"
+            app:layout_constraintTop_toBottomOf="@+id/etTheme" />
+
+        <CheckBox
+            android:id="@+id/cbFam"
+            style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
+            android:layout_width="115dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_cornwe"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="5"
+            android:text="Важное"
+            app:layout_constraintEnd_toEndOf="@+id/etText"
+            app:layout_constraintTop_toBottomOf="@+id/etText" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_edit"
+            app:backgroundTint="@android:color/holo_green_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cbFam"
+            app:layout_constraintTop_toBottomOf="@+id/cbFam"
+            app:layout_constraintVertical_bias="0.725" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="76dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:src="@drawable/ic_menu_slideshow"
+            app:backgroundTint="@android:color/holo_green_dark"
+            app:layout_constraintBottom_toBottomOf="@+id/fabSave"
+            app:layout_constraintEnd_toStartOf="@+id/fabSave"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fabSave"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="К записям"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fabNotes"
+            app:layout_constraintHorizontal_bias="0.576"
+            app:layout_constraintStart_toStartOf="@+id/fabNotes"
+            app:layout_constraintTop_toBottomOf="@+id/fabNotes"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="59dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="8dp"
+            android:text="Создать"
+            android:textColor="#ffff"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/fabSave"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="@+id/fabSave" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

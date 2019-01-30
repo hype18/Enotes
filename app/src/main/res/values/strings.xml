@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Enotes</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_look_note">LookNote</string>
+
+    <string name="info_mess">После иземенения записи и возврата к окну "Все записи" нажмите обновить!
+        Звездочки в списке не кликабельны!!! Чтобы изменить статус записи: Откройте запись ->
+        Нажмите на звездочку и нажмите сохранить!
+         Вроде все, если что, то обращайтесь к разрабу(В настройках)</string>
+
+</resources>
